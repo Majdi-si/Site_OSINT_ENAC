@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Malwarius</title>
+  <meta name="description" content="Découvrez nos services en cybersécurité : audit, tests d'intrusion, durcissement, SOC, sensibilisation et réponse à incident.">
+  <meta property="og:title" content="Services — Malwarius">
+  <meta property="og:description" content="Audit, pentest, SOC, sensibilisation : nos services pour sécuriser votre SI.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="header__logo" aria-label="Malwarius — Accueil">
+        <img src="assets/img/logo-malwarius.jpg" alt="Malwarius" width="140" height="36">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="equipe.html" class="nav__link">Équipe</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero page -->
+    <section class="hero" style="padding:2.5rem 0;">
+      <div class="container">
+        <h1 class="hero__title">Nos <span class="hero__highlight">services</span></h1>
+        <p class="hero__text">
+          Une offre complète pour évaluer, protéger et surveiller votre système d'information.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services détaillés -->
+    <section class="section section--alt" aria-labelledby="services-detail-titre">
+      <div class="container">
+        <h2 id="services-detail-titre" class="sr-only">Détail de nos services</h2>
+        <div class="card-grid">
+
+          <!-- 1. Audit sécurité -->
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M17 24L22 29L31 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="card__title">Audit sécurité</h3>
+            <p class="card__text">
+              Évaluation exhaustive de votre posture de sécurité : cartographie des actifs,
+              analyse des vulnérabilités, revue de configuration, conformité (ISO 27001, RGPD, NIS2).
+              Nous fournissons un rapport détaillé avec plan de remédiation priorisé.
+            </p>
+          </article>
+
+          <!-- 2. Tests d'intrusion -->
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect x="8" y="18" width="32" height="22" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 8V18" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="24" cy="8" r="4" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="24" cy="30" r="3" fill="currentColor"/>
+              <path d="M24 33V36" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+            <h3 class="card__title">Tests d'intrusion</h3>
+            <p class="card__text">
+              Simulation d'attaques réalistes (boîte noire, grise ou blanche) sur vos
+              infrastructures, applications web et réseaux internes. Nos pentesteurs
+              identifient les failles exploitables et vous aident à les corriger
+              avant qu'un attaquant ne les découvre.
+            </p>
+          </article>
+
+          <!-- 3. Durcissement systèmes -->
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 4L38 12V24C38 34 24 44 24 44C24 44 10 34 10 24V12L24 4Z" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M18 24H30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 18V30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <h3 class="card__title">Durcissement systèmes</h3>
+            <p class="card__text">
+              Renforcement de la configuration de vos serveurs, postes de travail,
+              équipements réseau et environnements cloud. Application des bonnes pratiques
+              de l'ANSSI et des benchmarks CIS pour réduire la surface d'attaque.
+            </p>
+          </article>
+
+          <!-- 4. SOC & Supervision -->
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect x="6" y="10" width="36" height="24" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M6 38H42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M14 20H22M14 26H34" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+              <circle cx="34" cy="20" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h3 class="card__title">SOC &amp; supervision</h3>
+            <p class="card__text">
+              Notre centre opérationnel de sécurité assure une surveillance continue
+              de votre infrastructure 24h/24, 7j/7. Détection d'incidents, corrélation
+              d'événements et escalade selon des procédures éprouvées. Vous êtes alertés
+              en temps réel en cas d'anomalie.
+            </p>
+          </article>
+
+          <!-- 5. Sensibilisation -->
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="18" cy="16" r="6" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="34" cy="16" r="6" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M4 40C4 32 10 28 18 28C22 28 25 29 27 31" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M22 40C22 32 28 28 34 28C42 28 44 32 44 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <h3 class="card__title">Sensibilisation</h3>
+            <p class="card__text">
+              Formations sur mesure pour vos collaborateurs : bonnes pratiques,
+              phishing, gestion des mots de passe, RGPD. Des modules interactifs
+              adaptés à chaque profil (direction, technique, métier) pour ancrer
+              durablement les bons réflexes.
+            </p>
+          </article>
+
+          <!-- 6. Réponse à incident -->
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 6L42 40H6L24 6Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M24 20V28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="34" r="2" fill="currentColor"/>
+            </svg>
+            <h3 class="card__title">Réponse à incident</h3>
+            <p class="card__text">
+              En cas de compromission, notre équipe intervient rapidement pour contenir
+              la menace, analyser l'incident (forensics), et restaurer un état de fonctionnement
+              normal. Nous vous accompagnons également dans la notification aux autorités
+              compétentes si nécessaire.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Méthodologie -->
+    <section class="section" aria-labelledby="methodo-titre">
+      <div class="container about-content">
+        <h2 id="methodo-titre" class="section__title">Notre méthodologie</h2>
+        <p>
+          Chaque mission débute par une phase de cadrage pour comprendre votre contexte,
+          vos enjeux métier et vos contraintes réglementaires. Nous définissons ensemble
+          le périmètre, les objectifs et les livrables attendus.
+        </p>
+        <p>
+          Nos interventions sont menées conformément aux référentiels reconnus
+          (OWASP, PTES, NIST, MITRE ATT&amp;CK) et encadrées par un contrat de prestation
+          précisant le périmètre autorisé. Aucun test n'est réalisé sans votre accord
+          explicite.
+        </p>
+        <p>
+          À l'issue de chaque mission, un rapport complet vous est remis lors d'une
+          restitution en présence des parties prenantes. Nous restons disponibles
+          pour vous accompagner dans la mise en œuvre des recommandations.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="cta-banner__title">Un projet de sécurisation ?</h2>
+        <p class="cta-banner__text">
+          Contactez-nous pour un échange gratuit et sans engagement sur vos besoins.
+        </p>
+        <a href="contact.html" class="btn btn--primary">Demander un devis</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__title">Malwarius</p>
+          <p class="footer__text">
+            Société spécialisée en cybersécurité, basée à Bordeaux. Audit, pentest, supervision et réponse à incident depuis 2016.
+          </p>
+        </div>
+        <div>
+          <p class="footer__title">Navigation</p>
+          <ul class="footer__list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__title">Ressources</p>
+          <ul class="footer__list">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="sitemap.xml">Plan du site</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__title">Contact</p>
+          <p class="footer__text">
+            14 rue du Fort Louis<br>
+            33000 Bordeaux<br>
+            <a href="mailto:contact@malwarius.fr">contact@malwarius.fr</a><br>
+            05 62 17 40 00
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2016–2026 Malwarius SARL. Tous droits réservés. — <a href="mentions-legales.html">Mentions légales</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

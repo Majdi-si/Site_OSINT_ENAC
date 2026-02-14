@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Équipe — Malwarius</title>
+  <meta name="description" content="Rencontrez l'équipe Malwarius : des experts passionnés au service de votre cybersécurité.">
+  <meta property="og:title" content="Équipe — Malwarius">
+  <meta property="og:description" content="Les visages derrière Malwarius : direction, commercial, RH et support technique.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="header__logo" aria-label="Malwarius — Accueil">
+        <img src="assets/img/logo-malwarius.jpg" alt="Malwarius" width="140" height="36">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="equipe.html" class="nav__link">Équipe</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero page -->
+    <section class="hero" style="padding:2.5rem 0;">
+      <div class="container">
+        <h1 class="hero__title">Notre <span class="hero__highlight">équipe</span></h1>
+        <p class="hero__text">
+          Des profils complémentaires, unis par une passion commune : la cybersécurité.
+        </p>
+      </div>
+    </section>
+
+    <!-- Membres de l'équipe -->
+    <section class="section section--alt" aria-labelledby="equipe-titre">
+      <div class="container">
+        <h2 id="equipe-titre" class="sr-only">Membres de l'équipe</h2>
+        <div class="team-grid">
+
+          <!-- CEO -->
+          <article class="team-member">
+            <div class="team-member__avatar">
+              <!-- Remplacer par la photo : assets/img/equipe/nathalie-duverger.jpg (ratio 1:1, ~300x300px) -->
+              <img src="assets/img/equipe/nathalie-duverger.jpg" alt="Photo de Nathalie Duverger" width="96" height="96" loading="lazy">
+            </div>
+            <h3 class="team-member__name">Nathalie Duverger</h3>
+            <p class="team-member__role">Directrice générale (CEO)</p>
+            <p class="team-member__bio">
+              Ingénieure en sécurité des SI, 15 ans d'expérience dans le conseil.
+              Co-fondatrice de Malwarius, elle pilote la stratégie et le développement
+              de l'entreprise.
+            </p>
+          </article>
+
+          <!-- Commercial -->
+          <article class="team-member">
+            <div class="team-member__avatar">
+              <!-- Remplacer par la photo : assets/img/equipe/eric-pasquier.jpg (ratio 1:1, ~300x300px) -->
+              <img src="assets/img/equipe/eric-pasquier.jpg" alt="Photo de Éric Pasquier" width="96" height="96" loading="lazy">
+            </div>
+            <h3 class="team-member__name">Éric Pasquier</h3>
+            <p class="team-member__role">Directeur commercial</p>
+            <p class="team-member__bio">
+              Spécialiste de la relation client B2B, Éric accompagne les entreprises
+              dans la définition de leurs besoins en cybersécurité et assure le suivi
+              des projets.
+            </p>
+          </article>
+
+          <!-- RH -->
+          <article class="team-member">
+            <div class="team-member__avatar">
+              <!-- Remplacer par la photo : assets/img/equipe/claire-monteil.jpg (ratio 1:1, ~300x300px) -->
+              <img src="assets/img/equipe/claire-monteil.jpg" alt="Photo de Claire Monteil" width="96" height="96" loading="lazy">
+            </div>
+            <h3 class="team-member__name">Claire Monteil</h3>
+            <p class="team-member__role">Responsable RH</p>
+            <p class="team-member__bio">
+              Claire veille au bien-être des collaborateurs et pilote le recrutement.
+              Elle organise également les parcours de formation et de montée
+              en compétences.
+            </p>
+          </article>
+
+          <!-- Support technique -->
+          <article class="team-member">
+            <div class="team-member__avatar">
+              <!-- Remplacer par la photo : assets/img/equipe/jerome-lafont.jpg (ratio 1:1, ~300x300px) -->
+              <img src="assets/img/equipe/jerome-lafont.jpg" alt="Photo de Jérôme Lafont" width="96" height="96" loading="lazy">
+            </div>
+            <h3 class="team-member__name">Jérôme Lafont</h3>
+            <p class="team-member__role">Responsable support technique</p>
+            <p class="team-member__bio">
+              Administrateur systèmes et réseaux de formation, Jérôme coordonne
+              l'équipe support et garantit la disponibilité des outils internes
+              et des plateformes client.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Rejoindre -->
+    <section class="section" aria-labelledby="rejoindre-titre">
+      <div class="container about-content" style="text-align:center;">
+        <h2 id="rejoindre-titre" class="section__title">Rejoignez-nous</h2>
+        <p>
+          Malwarius est toujours à la recherche de talents passionnés par la sécurité
+          informatique. Analystes SOC, pentesters, consultants GRC… Si vous partagez
+          nos valeurs d'excellence et d'éthique, envoyez-nous votre candidature.
+        </p>
+        <p style="margin-top:1.5rem;">
+          <a href="contact.html" class="btn btn--primary">Postuler</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__title">Malwarius</p>
+          <p class="footer__text">
+            Société spécialisée en cybersécurité, basée à Bordeaux. Audit, pentest, supervision et réponse à incident depuis 2016.
+          </p>
+        </div>
+        <div>
+          <p class="footer__title">Navigation</p>
+          <ul class="footer__list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__title">Ressources</p>
+          <ul class="footer__list">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="sitemap.xml">Plan du site</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__title">Contact</p>
+          <p class="footer__text">
+            14 rue du Fort Louis<br>
+            33000 Bordeaux<br>
+            <a href="mailto:contact@malwarius.fr">contact@malwarius.fr</a><br>
+            05 62 17 40 00
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2016–2026 Malwarius SARL. Tous droits réservés. — <a href="mentions-legales.html">Mentions légales</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

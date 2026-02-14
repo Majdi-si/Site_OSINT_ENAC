@@ -1,0 +1,5 @@
+# robots.txt — malwarius.fr
+User-agent: *
+Allow: /
+
+Sitemap: sitemap.xml

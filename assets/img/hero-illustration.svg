@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#1a2538"/>
+  <rect x="60" y="120" width="320" height="260" rx="12" fill="#243347"/>
+  <rect x="420" y="120" width="320" height="260" rx="12" fill="#243347"/>
+  <circle cx="220" cy="200" r="35" fill="none" stroke="#c0392b" stroke-width="3"/>
+  <path d="M245 220 L265 240" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
+  <rect x="140" y="260" width="160" height="10" rx="5" fill="#3a4f66"/>
+  <rect x="160" y="285" width="120" height="8" rx="4" fill="#3a4f66" opacity=".6"/>
+  <rect x="140" y="310" width="160" height="8" rx="4" fill="#3a4f66" opacity=".4"/>
+  <rect x="460" y="150" width="240" height="12" rx="6" fill="#3a4f66"/>
+  <rect x="460" y="180" width="200" height="10" rx="5" fill="#3a4f66" opacity=".6"/>
+  <rect x="460" y="206" width="240" height="10" rx="5" fill="#3a4f66" opacity=".4"/>
+  <rect x="460" y="232" width="180" height="10" rx="5" fill="#3a4f66" opacity=".3"/>
+  <rect x="460" y="280" width="130" height="40" rx="6" fill="#c0392b"/>
+  <text x="525" y="306" fill="#fff" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="600">En savoir +</text>
+  <text x="400" y="460" fill="#667788" font-family="sans-serif" font-size="13" text-anchor="middle">Malwarius — Cybersécurité</text>
+</svg>

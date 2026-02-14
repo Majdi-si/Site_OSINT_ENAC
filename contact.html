@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Malwarius</title>
+  <meta name="description" content="Contactez Malwarius pour un audit, un devis ou toute question sur nos services en cybersécurité. Basés à Bordeaux.">
+  <meta property="og:title" content="Contact — Malwarius">
+  <meta property="og:description" content="Contactez notre équipe pour un échange sur vos enjeux de cybersécurité.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="header__logo" aria-label="Malwarius — Accueil">
+        <img src="assets/img/logo-malwarius.jpg" alt="Malwarius" width="140" height="36">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="equipe.html" class="nav__link">Équipe</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero page -->
+    <section class="hero" style="padding:2.5rem 0;">
+      <div class="container">
+        <h1 class="hero__title">Nous <span class="hero__highlight">contacter</span></h1>
+        <p class="hero__text">
+          Une question, un projet ou une urgence ? Notre équipe est à votre écoute.
+        </p>
+      </div>
+    </section>
+
+    <!-- Formulaire + coordonnées -->
+    <section class="section section--alt" aria-labelledby="contact-titre">
+      <div class="container">
+        <h2 id="contact-titre" class="sr-only">Formulaire de contact et coordonnées</h2>
+        <div class="contact-grid">
+
+          <!-- Formulaire -->
+          <div>
+            <h3 style="color:var(--color-primary); margin-bottom:1rem; font-size:1.25rem;">Envoyez-nous un message</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="nom">Nom complet <span aria-hidden="true">*</span></label>
+                <input type="text" id="nom" name="nom" required autocomplete="name" placeholder="Jean Dupont">
+              </div>
+              <div class="form-group">
+                <label for="entreprise">Entreprise</label>
+                <input type="text" id="entreprise" name="entreprise" autocomplete="organization" placeholder="Votre entreprise">
+              </div>
+              <div class="form-group">
+                <label for="email">Adresse e-mail <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="jean.dupont@exemple.fr">
+              </div>
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" autocomplete="tel" placeholder="06 12 34 56 78">
+              </div>
+              <div class="form-group">
+                <label for="sujet">Sujet</label>
+                <select id="sujet" name="sujet">
+                  <option value="">— Choisir —</option>
+                  <option value="devis">Demande de devis</option>
+                  <option value="audit">Audit sécurité</option>
+                  <option value="incident">Réponse à incident</option>
+                  <option value="formation">Sensibilisation / formation</option>
+                  <option value="recrutement">Candidature</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" required placeholder="Décrivez votre besoin…"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Envoyer le message</button>
+              <div id="form-success" class="form-success" role="alert">
+                Merci pour votre message ! Notre équipe reviendra vers vous sous 48 heures ouvrées.
+              </div>
+            </form>
+          </div>
+
+          <!-- Coordonnées -->
+          <div>
+            <h3 style="color:var(--color-primary); margin-bottom:1rem; font-size:1.25rem;">Nos coordonnées</h3>
+            <div class="contact-info">
+
+              <!-- Adresse -->
+              <div class="contact-info__item">
+                <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="9" r="3" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <div>
+                  <p class="contact-info__label">Adresse</p>
+                  <p class="contact-info__text">
+                    14 rue du Fort Louis<br>
+                    33000 Bordeaux, France
+                  </p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-info__item">
+                <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M2 7L12 13L22 7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <p class="contact-info__label">E-mail</p>
+                  <p class="contact-info__text">
+                    <a href="mailto:contact@malwarius.fr">contact@malwarius.fr</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Téléphone -->
+              <div class="contact-info__item">
+                <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.56 21 20.13 21 19.7 20.97C10.55 20.42 3.58 13.45 3.03 4.3C3 3.87 3 3.44 3.03 3C3.07 2.44 3.52 2 4.08 2H7.08C7.56 2 7.97 2.34 8.05 2.81C8.2 3.73 8.45 4.62 8.79 5.47L7.17 7.09C8.67 10.37 11.63 13.33 14.91 14.83L16.53 13.21C17.38 13.55 18.27 13.8 19.19 13.95C19.66 14.03 20 14.44 20 14.92H22Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <div>
+                  <p class="contact-info__label">Téléphone</p>
+                  <p class="contact-info__text">05 62 17 40 00</p>
+                </div>
+              </div>
+
+              <!-- Horaires -->
+              <div class="contact-info__item">
+                <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <p class="contact-info__label">Horaires d'ouverture</p>
+                  <p class="contact-info__text">
+                    Lundi – Vendredi : 9h00 – 18h00<br>
+                    Samedi – Dimanche : Fermé<br>
+                    <strong>Astreinte incident 24/7</strong> pour les clients sous contrat SOC.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__title">Malwarius</p>
+          <p class="footer__text">
+            Société spécialisée en cybersécurité, basée à Bordeaux. Audit, pentest, supervision et réponse à incident depuis 2016.
+          </p>
+        </div>
+        <div>
+          <p class="footer__title">Navigation</p>
+          <ul class="footer__list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__title">Ressources</p>
+          <ul class="footer__list">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="sitemap.xml">Plan du site</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__title">Contact</p>
+          <p class="footer__text">
+            14 rue du Fort Louis<br>
+            33000 Bordeaux<br>
+            <a href="mailto:contact@malwarius.fr">contact@malwarius.fr</a><br>
+            05 62 17 40 00
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2016–2026 Malwarius SARL. Tous droits réservés. — <a href="mentions-legales.html">Mentions légales</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

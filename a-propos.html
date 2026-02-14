@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — Malwarius</title>
+  <meta name="description" content="Découvrez l'histoire de Malwarius, entreprise de cybersécurité fondée en 2016 à Bordeaux. Notre mission, nos valeurs et nos engagements.">
+  <meta property="og:title" content="À propos — Malwarius">
+  <meta property="og:description" content="L'histoire de Malwarius, entreprise bordelaise de cybersécurité depuis 2016.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="header__logo" aria-label="Malwarius — Accueil">
+        <img src="assets/img/logo-malwarius.jpg" alt="Malwarius" width="140" height="36">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="equipe.html" class="nav__link">Équipe</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero page -->
+    <section class="hero" style="padding:2.5rem 0;">
+      <div class="container">
+        <h1 class="hero__title">À propos de <span class="hero__highlight">Malwarius</span></h1>
+        <p class="hero__text">Notre histoire, notre mission et les valeurs qui guident notre action au quotidien.</p>
+      </div>
+    </section>
+
+    <!-- Histoire -->
+    <section class="section section--alt" aria-labelledby="histoire-titre">
+      <div class="container about-content">
+        <h2 id="histoire-titre" class="section__title">Notre histoire</h2>
+        <p>
+          Fondée en 2016 à Bordeaux par deux ingénieurs passionnés de sécurité informatique,
+          Malwarius est née d'un constat simple : les PME et organisations de taille intermédiaire
+          sont de plus en plus exposées aux cybermenaces, sans toujours disposer des ressources
+          nécessaires pour y faire face.
+        </p>
+        <p>
+          Nos fondateurs, issus du monde de l'audit et de la réponse à incident, ont décidé
+          de créer une structure à taille humaine, capable d'offrir un niveau d'expertise
+          habituellement réservé aux grands comptes. Dès ses débuts, Malwarius s'est distinguée
+          par son approche pragmatique : comprendre le métier du client avant de proposer
+          des solutions techniques.
+        </p>
+        <p>
+          Aujourd'hui, l'équipe compte une douzaine de collaborateurs aux profils complémentaires —
+          analystes SOC, auditeurs, consultants en gouvernance et formateurs. Nous intervenons
+          principalement en Nouvelle-Aquitaine, mais accompagnons également des clients
+          sur l'ensemble du territoire national.
+        </p>
+        <p>
+          Notre siège social est situé au cœur de Bordeaux, à quelques pas de la place de la
+          Bourse. Nous disposons également d'un laboratoire technique dédié aux tests d'intrusion
+          et à l'analyse de malwares.
+        </p>
+
+        <!-- Chiffres clés -->
+        <div class="about-stats">
+          <div class="stat">
+            <p class="stat__number">2016</p>
+            <p class="stat__label">Année de création</p>
+          </div>
+          <div class="stat">
+            <p class="stat__number">12</p>
+            <p class="stat__label">Collaborateurs</p>
+          </div>
+          <div class="stat">
+            <p class="stat__number">120+</p>
+            <p class="stat__label">Clients accompagnés</p>
+          </div>
+          <div class="stat">
+            <p class="stat__number">98%</p>
+            <p class="stat__label">Taux de satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valeurs -->
+    <section class="section" aria-labelledby="valeurs-titre">
+      <div class="container">
+        <h2 id="valeurs-titre" class="section__title">Nos valeurs</h2>
+        <div class="card-grid">
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 4L30 16H42L32 24L36 38L24 30L12 38L16 24L6 16H18L24 4Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="card__title">Excellence technique</h3>
+            <p class="card__text">Nos équipes se forment en continu et participent régulièrement à des conférences et challenges de sécurité.</p>
+          </article>
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M8 42C8 34 15 28 24 28C33 28 40 34 40 42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <h3 class="card__title">Proximité client</h3>
+            <p class="card__text">Un interlocuteur dédié, des échanges réguliers et une transparence totale sur nos interventions.</p>
+          </article>
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect x="6" y="6" width="36" height="36" rx="6" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 24H32M24 16V32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <h3 class="card__title">Éthique &amp; responsabilité</h3>
+            <p class="card__text">Nous respectons un cadre déontologique strict. Nos tests sont toujours menés avec autorisation et dans un périmètre défini.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dates clés -->
+    <section class="section section--alt" aria-labelledby="timeline-titre">
+      <div class="container about-content">
+        <h2 id="timeline-titre" class="section__title">Dates clés</h2>
+        <div class="card-grid" style="grid-template-columns:1fr;">
+          <div class="card" style="display:flex; gap:1.25rem; align-items:flex-start;">
+            <span style="font-size:1.5rem; font-weight:700; color:var(--color-accent); white-space:nowrap;">2016</span>
+            <div>
+              <p class="card__title">Création de Malwarius</p>
+              <p class="card__text">Deux ingénieurs bordelais fondent la société pour répondre aux besoins cyber des PME de la région.</p>
+            </div>
+          </div>
+          <div class="card" style="display:flex; gap:1.25rem; align-items:flex-start;">
+            <span style="font-size:1.5rem; font-weight:700; color:var(--color-accent); white-space:nowrap;">2018</span>
+            <div>
+              <p class="card__title">Ouverture du SOC</p>
+              <p class="card__text">Lancement du centre opérationnel de sécurité avec supervision 24/7 pour nos premiers clients sous contrat.</p>
+            </div>
+          </div>
+          <div class="card" style="display:flex; gap:1.25rem; align-items:flex-start;">
+            <span style="font-size:1.5rem; font-weight:700; color:var(--color-accent); white-space:nowrap;">2020</span>
+            <div>
+              <p class="card__title">Cap des 50 clients</p>
+              <p class="card__text">L'équipe passe à 8 collaborateurs. Malwarius accompagne ses premiers clients hors Nouvelle-Aquitaine.</p>
+            </div>
+          </div>
+          <div class="card" style="display:flex; gap:1.25rem; align-items:flex-start;">
+            <span style="font-size:1.5rem; font-weight:700; color:var(--color-accent); white-space:nowrap;">2023</span>
+            <div>
+              <p class="card__title">Laboratoire d'analyse</p>
+              <p class="card__text">Inauguration d'un lab dédié aux tests d'intrusion et à l'analyse de malwares dans nos nouveaux locaux.</p>
+            </div>
+          </div>
+          <div class="card" style="display:flex; gap:1.25rem; align-items:flex-start;">
+            <span style="font-size:1.5rem; font-weight:700; color:var(--color-accent); white-space:nowrap;">2025</span>
+            <div>
+              <p class="card__title">120+ clients, 12 collaborateurs</p>
+              <p class="card__text">Malwarius renforce son offre NIS2 et poursuit son développement sur le territoire national.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="cta-banner__title">Envie de rejoindre l'aventure ?</h2>
+        <p class="cta-banner__text">
+          Nous recrutons régulièrement des profils passionnés par la cybersécurité.
+        </p>
+        <a href="contact.html" class="btn btn--primary">Nous contacter</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__title">Malwarius</p>
+          <p class="footer__text">
+            Société spécialisée en cybersécurité, basée à Bordeaux. Audit, pentest, supervision et réponse à incident depuis 2016.
+          </p>
+        </div>
+        <div>
+          <p class="footer__title">Navigation</p>
+          <ul class="footer__list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__title">Ressources</p>
+          <ul class="footer__list">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="sitemap.xml">Plan du site</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__title">Contact</p>
+          <p class="footer__text">
+            14 rue du Fort Louis<br>
+            33000 Bordeaux<br>
+            <a href="mailto:contact@malwarius.fr">contact@malwarius.fr</a><br>
+            05 62 17 40 00
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2016–2026 Malwarius SARL. Tous droits réservés. — <a href="mentions-legales.html">Mentions légales</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
