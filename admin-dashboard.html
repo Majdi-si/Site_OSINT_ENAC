@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Dashboard Administrateur</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    // Vérification de l'authentification
+    if (sessionStorage.getItem('adminAuthenticated') !== 'true') {
+      window.location.href = 'admin.html';
+    }
+  </script>
+  <style>
+    .dashboard-container {
+      min-height: 100vh;
+      background: var(--color-bg);
+      padding: 40px 20px;
+    }
+
+    .dashboard-header {
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: 20px;
+      border-radius: var(--radius);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .dashboard-header h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .flag-container {
+      background: var(--color-white);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .flag-title {
+      color: var(--color-accent);
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .flag-box {
+      background: #f1f3f5;
+      padding: 30px;
+      border-radius: 8px;
+      border: 2px dashed var(--color-accent);
+      margin: 20px 0;
+    }
+
+    .flag-text {
+      font-family: var(--font-mono);
+      font-size: 20px;
+      color: var(--color-primary);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .congrats {
+      color: var(--color-success);
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: 40px auto 0;
+    }
+
+    .stat-card {
+      background: var(--color-white);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      color: var(--color-text-light);
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .stat-card .value {
+      color: var(--color-accent);
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .logout-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: var(--color-accent);
+      color: var(--color-white);
+      text-decoration: none;
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+
+    .logout-btn:hover {
+      background: var(--color-accent-hover);
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function logout() {
+      sessionStorage.removeItem('adminAuthenticated');
+      sessionStorage.removeItem('adminUser');
+      window.location.href = 'admin.html';
+    }
+  </script>
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>🎯 Dashboard Administrateur</h1>
+      <p>Bienvenue, Maurice Berthelot</p>
+    </div>
+
+    <div class="flag-container">
+      <div class="flag-title"> Espace administrateur</div>
+      <p>.</p>
+
+      <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--color-accent);">
+        <h3 style="color: var(--color-primary); margin-bottom: 15px;">📦 Fichiers administratifs</h3>
+        <p style="color: var(--color-text-light); font-size: 14px; margin-bottom: 15px;">
+          Accès aux documents confidentiels
+        </p>
+        <a href="assets/downloads/Private_Files.zip" download class="logout-btn" style="display: inline-block; margin-top: 0;">
+          Télécharger Private_Files.zip
+        </a>
+        <p style="color: var(--color-text-light); font-size: 12px; margin-top: 10px;">
+          🔒 Fichier protégé par mot de passe
+        </p>
+      </div>
+
+      <a href="index.html" class="logout-btn">Retour à l'accueil</a>
+      <button onclick="logout()" class="logout-btn" style="margin-left: 10px; border: none; cursor: pointer;">Se déconnecter</button>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>Tentatives</h3>
+        <div class="value">∞</div>
+      </div>
+      <div class="stat-card">
+        <h3>Sécurité</h3>
+        <div class="value">0/10</div>
+      </div>
+      <div class="stat-card">
+        <h3>Wordlist</h3>
+        <div class="value">#1</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

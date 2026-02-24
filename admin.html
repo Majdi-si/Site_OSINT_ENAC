@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Connexion administrateur</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .admin-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+      padding: 20px;
+    }
+
+    .admin-box {
+      background: var(--color-white);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .admin-box h1 {
+      color: var(--color-primary);
+      margin-bottom: 10px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .admin-box p {
+      color: var(--color-text-light);
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--color-text);
+      font-weight: 500;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 12px;
+      background: var(--color-accent);
+      color: var(--color-white);
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-login:hover {
+      background: var(--color-accent-hover);
+    }
+
+    .error-message {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 12px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      display: none;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .error-message.show {
+      display: block;
+    }
+
+    .admin-footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--color-text-light);
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <div class="admin-box">
+      <h1>🔒 Espace Administrateur</h1>
+      <p>Accès restreint — Authentification requise</p>
+      
+      <div id="error-message" class="error-message">
+        Identifiants incorrects. Veuillez réessayer.
+      </div>
+
+      <form id="login-form" onsubmit="return handleLogin(event)">
+        <div class="form-group">
+          <label for="username">Identifiant</label>
+          <input type="text" id="username" name="username" required autocomplete="username">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" required autocomplete="current-password">
+        </div>
+
+        <button type="submit" class="btn-login">Se connecter</button>
+      </form>
+
+      <div class="admin-footer">
+        Malwarius © 2026 — Système sécurisé
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const errorMsg = document.getElementById('error-message');
+      
+      // Identifiants pour le CTF
+      const validUsername = 'M-berthelot';
+      const validPassword = 'password';
+      
+      if (username === validUsername && password === validPassword) {
+        errorMsg.classList.remove('show');
+        // Enregistrer la session
+        sessionStorage.setItem('adminAuthenticated', 'true');
+        sessionStorage.setItem('adminUser', username);
+        window.location.href = 'admin-dashboard.html';
+      } else {
+        errorMsg.classList.add('show');
+        document.getElementById('password').value = '';
+      }
+      
+      return false;
+    }
+  </script>
+</body>
+</html>
