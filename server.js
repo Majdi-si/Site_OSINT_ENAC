@@ -27,7 +27,8 @@ app.post('/api/login', (req, res) => {
       user: username 
     });
   } else {
-    res.status(401).json({ 
+    // Toujours renvoyer 200 pour Hydra (brute-force)
+    res.status(200).json({ 
       success: false, 
       message: 'Identifiants incorrects' 
     });
