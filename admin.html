@@ -136,26 +136,48 @@
   </div>
 
   <script>
-    function handleLogin(event) {
+    async function handleLogin(event) {
       event.preventDefault();
       
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
       const errorMsg = document.getElementById('error-message');
+      const submitBtn = event.target.querySelector('button[type="submit"]');
       
-      // Identifiants pour le CTF
-      const validUsername = 'M-berthelot';
-      const validPassword = 'maverick';
+      // Désactiver le bouton pendant la requête
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Connexion...';
       
-      if (username === validUsername && password === validPassword) {
-        errorMsg.classList.remove('show');
-        // Enregistrer la session
-        sessionStorage.setItem('adminAuthenticated', 'true');
-        sessionStorage.setItem('adminUser', username);
-        window.location.href = 'admin-dashboard.html';
-      } else {
+      try {
+        // Appel à l'API backend (identifiants validés côté serveur)
+        const response = await fetch('/api/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username, password })
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok && data.success) {
+          errorMsg.classList.remove('show');
+          // Enregistrer la session
+          sessionStorage.setItem('adminAuthenticated', 'true');
+          sessionStorage.setItem('adminUser', username);
+          window.location.href = 'admin-dashboard.html';
+        } else {
+          errorMsg.classList.add('show');
+          document.getElementById('password').value = '';
+        }
+      } catch (error) {
+        console.error('Erreur de connexion:', error);
+        errorMsg.textContent = 'Erreur serveur. Veuillez réessayer.';
         errorMsg.classList.add('show');
-        document.getElementById('password').value = '';
+      } finally {
+        // Réactiver le bouton
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Se connecter';
       }
       
       return false;

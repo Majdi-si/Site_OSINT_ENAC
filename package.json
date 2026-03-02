@@ -1,0 +1,15 @@
+{
+  "name": "osint-enac-malwarius",
+  "version": "1.0.0",
+  "description": "Site OSINT ENAC - Challenge CTF Malwarius",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["osint", "ctf", "enac"],
+  "author": "ENAC",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
