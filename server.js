@@ -5,6 +5,7 @@ const PORT = 3000;
 
 // Middleware pour parser le JSON
 app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // Pour Hydra
 
 // Servir les fichiers statiques
 app.use(express.static(__dirname));
